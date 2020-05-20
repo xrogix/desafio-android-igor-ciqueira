@@ -1,0 +1,12 @@
+package com.example.data.services
+
+import com.example.data.environment.Environment
+import com.example.data.factory.ServiceFactory
+
+class ServiceProviderImpl(
+    private val factory: ServiceFactory
+) : ServiceProvider {
+    override fun getService(): MarvelApi {
+        return factory.create(MarvelApi::class.java)
+    }
+}
