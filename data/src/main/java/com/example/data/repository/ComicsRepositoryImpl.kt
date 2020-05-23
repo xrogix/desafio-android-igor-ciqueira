@@ -1,13 +1,14 @@
 package com.example.data.repository
 
 import com.example.data.services.ServiceProvider
-import com.example.domain.Comics
-import retrofit2.Call
+import com.example.domain.model.Comics
+import com.example.domain.repository.ComicsRepository
 
 class ComicsRepositoryImpl(
     private val serviceProvider: ServiceProvider
 ): ComicsRepository {
-    override fun getComicsByCharacter(id: String): Call<List<Comics>> {
-        return serviceProvider.getService().listComics(id)
+    override fun getComicsByCharacter(id: String): List<Comics> {
+//        return serviceProvider.getService().listComics(id)
+        return listOf()
     }
 }

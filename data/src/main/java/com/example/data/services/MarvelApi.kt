@@ -1,7 +1,7 @@
 package com.example.data.services
 
-import com.example.domain.Characters
-import com.example.domain.Comics
+import com.example.domain.model.Characters
+import com.example.domain.model.Comics
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -30,4 +30,5 @@ interface MarvelApi {
     fun listComics(
         @Path("characterId") characterId: String
     ): Call<List<Comics>>
+
 }
