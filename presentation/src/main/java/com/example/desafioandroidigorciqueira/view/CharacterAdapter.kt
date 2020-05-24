@@ -1,10 +1,13 @@
 package com.example.desafioandroidigorciqueira.view
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.desafioandroidigorciqueira.R
 import com.example.domain.model.Characters
 
@@ -13,13 +16,19 @@ class CharacterAdapter(
 ): RecyclerView.Adapter<CharacterAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-
-        val tvCharacterName = itemView.findViewById<AppCompatTextView>(R.id.tv_character_name)
+        private val ivCharacterImage = itemView.findViewById<AppCompatImageView>(R.id.iv_character_image)
+        private val tvCharacterName = itemView.findViewById<AppCompatTextView>(R.id.tv_character_name)
 
         fun bind(character: Characters) {
+            val image = character.thumbnail.path + "/standard_medium.jpg"
+            Glide.with(itemView)
+                .load(image)
+                .into(ivCharacterImage)
             tvCharacterName.text = character.name
         }
     }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
