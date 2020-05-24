@@ -8,6 +8,6 @@ data class Characters(
     val description: String,
     val modified: Date,
     val resourceURI: String,
-    val urls: List<String>,
+    val urls: List<Url>,
     val thumbnail: Thumbnail
 )

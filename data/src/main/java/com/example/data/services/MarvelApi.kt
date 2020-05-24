@@ -1,8 +1,7 @@
 package com.example.data.services
 
-import com.example.domain.model.Characters
 import com.example.domain.model.Comics
-import retrofit2.Call
+import com.example.domain.model.Wrapper
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -16,19 +15,19 @@ interface MarvelApi {
      * @param hash Mds combination auth
      */
     @GET("v1/public/characters")
-    fun listCharacters(
+    suspend fun listCharacters(
         @Query("ts") ts: String,
         @Query("apikey") apikey: String,
         @Query("hash") hash: String
-    ) : Call<List<Characters>>
+    ) : Wrapper
 
     /**
      * Find all comics by id from characters
      * @param characterId Id from character
      */
     @GET("v1/public/characters/{characterId}/comics")
-    fun listComics(
+    suspend fun listComics(
         @Path("characterId") characterId: String
-    ): Call<List<Comics>>
+    ): List<Comics>
 
 }

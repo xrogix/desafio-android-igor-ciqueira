@@ -4,7 +4,7 @@ import com.example.data.environment.Environment
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-abstract class ServiceFactory(
+class ServiceFactory(
     private val environment: Environment
 ) {
 
