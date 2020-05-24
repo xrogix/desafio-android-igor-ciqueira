@@ -18,7 +18,9 @@ interface MarvelApi {
     suspend fun listCharacters(
         @Query("ts") ts: String,
         @Query("apikey") apikey: String,
-        @Query("hash") hash: String
+        @Query("hash") hash: String,
+        @Query("limit") limit: String = "20",
+        @Query("offset") offset: String = "0"
     ) : Wrapper
 
     /**
