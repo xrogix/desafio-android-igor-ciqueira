@@ -29,4 +29,5 @@ class ServiceFactory(
         val retrofit = apiAdapter(baseUrl)
         return retrofit.create(serviceType)
     }
+
 }

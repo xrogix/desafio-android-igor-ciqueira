@@ -7,8 +7,7 @@ import com.example.domain.repository.ComicsRepository
 class ComicsRepositoryImpl(
     private val serviceProvider: ServiceProvider
 ): ComicsRepository {
-    override fun getComicsByCharacter(id: String): List<Comics> {
-//        return serviceProvider.getService().listComics(id)
-        return listOf()
+    override suspend fun getComicsByCharacter(id: String): List<Comics> {
+        return serviceProvider.getService().listComics(id)
     }
 }
