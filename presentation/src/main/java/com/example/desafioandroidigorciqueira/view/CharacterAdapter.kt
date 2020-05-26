@@ -1,40 +1,66 @@
 package com.example.desafioandroidigorciqueira.view
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.widget.AppCompatImageView
-import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.data.services.ImageProvider
 import com.example.desafioandroidigorciqueira.R
+import com.example.desafioandroidigorciqueira.view.viewholder.CharacterViewHolder
+import com.example.desafioandroidigorciqueira.view.viewholder.LoadingViewHolder
 import com.example.domain.model.Characters
 
 class CharacterAdapter(
     private val imageProvider: ImageProvider,
-    private val characterList: List<Characters>
-): RecyclerView.Adapter<CharacterAdapter.ViewHolder>() {
+    private var characterList: MutableList<Characters?>
+): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    class ViewHolder(private val imageProvider: ImageProvider, itemView: View): RecyclerView.ViewHolder(itemView) {
-        private val ivCharacterImage = itemView.findViewById<AppCompatImageView>(R.id.iv_character_image)
-        private val tvCharacterName = itemView.findViewById<AppCompatTextView>(R.id.tv_character_name)
-
-        fun bind(character: Characters) {
-            imageProvider.renderImage(character.thumbnail.path, ivCharacterImage)
-            tvCharacterName.text = character.name
-        }
+    override fun getItemViewType(position: Int): Int {
+        return if(characterList.get(position) == null)
+            VIEW_TYPE_LOADING
+        else
+            VIEW_TYPE_ITEM
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.character_item, parent, false)
-        return ViewHolder(imageProvider, view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        return if(viewType == VIEW_TYPE_ITEM) {
+                val view = LayoutInflater.from(parent.context)
+                    .inflate(R.layout.character_item, parent, false)
+                CharacterViewHolder(imageProvider, view)
+            } else {
+                val view = LayoutInflater.from(parent.context)
+                    .inflate(R.layout.item_loading, parent, false)
+                LoadingViewHolder(view)
+            }
     }
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val item = characterList[position]
-        holder.bind(item)
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        if(holder is CharacterViewHolder)
+            characterList.get(position)?.let {
+                holder.bind(it)
+            }
+        else if (holder is LoadingViewHolder)
+            holder.bind()
     }
 
     override fun getItemCount() = characterList.size
+
+    fun updateData(list: MutableList<Characters>) {
+        characterList.addAll(list)
+        notifyDataSetChanged()
+    }
+
+    fun addItem(character: Characters?) {
+        characterList.add(character)
+        notifyItemInserted(characterList.size - 1)
+    }
+
+    fun removeItem() {
+        characterList.removeAt(characterList.size - 1)
+        notifyItemRemoved(characterList.size)
+    }
+
+    companion object {
+        private const val VIEW_TYPE_ITEM = 0
+        private const val VIEW_TYPE_LOADING = 1
+    }
 }

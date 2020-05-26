@@ -5,5 +5,5 @@ data class Container(
     val limit: Int,
     val total: Int,
     val count: Int,
-    val results: List<Characters>
+    val results: MutableList<Characters>
 )

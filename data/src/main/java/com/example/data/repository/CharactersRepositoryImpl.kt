@@ -11,14 +11,16 @@ class CharactersRepositoryImpl(
     private val environment: Environment
 ) : CharactersRepository {
 
-    override suspend fun listCharacters(): Wrapper {
+    override suspend fun listCharacters(offset: Int): Wrapper {
         val ts = System.currentTimeMillis().toString()
         val hash = ts + environment.privateKey + environment.publicKey
 
         return serviceProvider.getService().listCharacters(
             ts,
             environment.publicKey,
-            hash.toMD5()
+            hash.toMD5(),
+            "20",
+            offset.toString()
         )
     }
 
