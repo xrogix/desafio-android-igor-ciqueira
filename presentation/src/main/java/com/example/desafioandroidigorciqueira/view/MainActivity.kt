@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var recyclerViewAdapter: CharacterAdapter
     private var isLoading = false
+    private var offset = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,20 +43,19 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    private fun populateData(offset: Int = 0) {
+    private fun populateData() {
         mainViewModel.loadMoreCharacters(offset)
+        offset+=20
     }
 
     private fun initAdapter() {
-        recyclerViewAdapter = CharacterAdapter(imageProvider, mainViewModel.getEmptyList() )
+        recyclerViewAdapter = CharacterAdapter(imageProvider, mainViewModel.getEmptyList())
         recyclerView.apply {
             setHasFixedSize(true)
 
             layoutManager = LinearLayoutManager(this@MainActivity)
 
             adapter = recyclerViewAdapter
-
-            var offset = 0
 
             addOnScrollListener(object: RecyclerView.OnScrollListener() {
                 override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
@@ -66,8 +66,7 @@ class MainActivity : AppCompatActivity() {
                             if(!isLoading && findLastCompletelyVisibleItemPosition() == it.size - 1) {
                                 recyclerViewAdapter.addItem(null)
                                 showLoading()
-                                offset+=20
-                                populateData(offset)
+                                populateData()
                             }
                         }
                     }

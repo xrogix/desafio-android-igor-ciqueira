@@ -14,25 +14,31 @@ class MainViewModel(
     private val charactersRepository: CharactersRepository
 ): ViewModel() {
 
+    //all character list
+    private val list = mutableListOf<Characters>()
     private val _characterList = MutableLiveData<MutableList<Characters>>()
     val characterList: LiveData<MutableList<Characters>>
         get() = _characterList
 
+
+    //control 20 last requisition characters
     private val _lastCharacterList = MutableLiveData<MutableList<Characters>>()
     val lastCharacterList: LiveData<MutableList<Characters>>
         get() = _lastCharacterList
 
-    private val list = mutableListOf<Characters>()
-
-
-    fun loadMoreCharacters(offset: Int = 0) {
+    fun loadMoreCharacters(offset: Int) {
         CoroutineScope(Dispatchers.Main).launch {
+            //begin new requisition
             val newRequisittion = withContext(Dispatchers.Default) {
                 charactersRepository.listCharacters(offset).data.results
             }
+
+            //add result do character list
             list.addAll(newRequisittion)
-            _lastCharacterList.value = newRequisittion
             _characterList.value = list
+
+            //add last request for control recyclerview pagination
+            _lastCharacterList.value = newRequisittion
         }
     }
 
