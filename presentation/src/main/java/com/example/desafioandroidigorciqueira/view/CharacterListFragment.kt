@@ -19,37 +19,37 @@ import org.koin.androidx.viewmodel.ext.android.sharedViewModel
 class CharacterListFragment : Fragment() {
 
     private var recyclerView: RecyclerView? = null
-    private lateinit var recyclerViewAdapter: CharacterAdapter
+    private var recyclerViewAdapter: CharacterAdapter? = null
 
     private val mainViewModel by sharedViewModel<MainViewModel>()
     private val imageProvider: ImageProvider by inject()
 
     private var isLoading = false
-    private var offset = 0
+    private var offset = 20
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         return inflater.inflate(R.layout.fragment_character_list, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        recyclerView = view?.findViewById(R.id.rv_list_characters)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        recyclerView = view.findViewById(R.id.rv_list_characters)
 
         listenViewModel()
-        populateData()
+        mainViewModel.initialLoad()
         initAdapter()
     }
 
     private fun listenViewModel() {
         mainViewModel.lastCharacterList.observe(viewLifecycleOwner, Observer {
             if(isLoading)
-                recyclerViewAdapter.removeItem()
+                recyclerViewAdapter?.removeItem()
+
+            recyclerViewAdapter?.updateData(it)
             hideLoading()
-            recyclerViewAdapter.updateData(it)
         })
     }
 
@@ -59,7 +59,11 @@ class CharacterListFragment : Fragment() {
     }
 
     private fun initAdapter() {
-        recyclerViewAdapter = CharacterAdapter(imageProvider, mainViewModel.getEmptyList())
+        if(recyclerViewAdapter == null) {
+            recyclerViewAdapter = CharacterAdapter(imageProvider, mainViewModel.getCharacterList()) {
+                mainViewModel.onSelectedCharacter(it)
+            }
+        }
         recyclerView?.apply {
             setHasFixedSize(true)
 
@@ -74,7 +78,7 @@ class CharacterListFragment : Fragment() {
                     (recyclerView.layoutManager as LinearLayoutManager).apply {
                         mainViewModel.characterList.value?.also {
                             if(!isLoading && findLastCompletelyVisibleItemPosition() == it.size - 1) {
-                                recyclerViewAdapter.addItem(null)
+                                recyclerViewAdapter?.addItem(null)
                                 showLoading()
                                 populateData()
                             }

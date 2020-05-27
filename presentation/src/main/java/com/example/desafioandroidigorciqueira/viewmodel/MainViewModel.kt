@@ -15,16 +15,24 @@ class MainViewModel(
 ): ViewModel() {
 
     //all character list
-    private val list = mutableListOf<Characters>()
-    private val _characterList = MutableLiveData<MutableList<Characters>>()
-    val characterList: LiveData<MutableList<Characters>>
+    private val list = mutableListOf<Characters?>()
+    private val _characterList = MutableLiveData<MutableList<Characters?>>()
+    val characterList: LiveData<MutableList<Characters?>>
         get() = _characterList
 
+    private val _characterDetail = MutableLiveData<Characters>()
+    val charactersDetail : LiveData<Characters>
+        get() = _characterDetail
 
     //control 20 last requisition characters
     private val _lastCharacterList = MutableLiveData<MutableList<Characters>>()
     val lastCharacterList: LiveData<MutableList<Characters>>
         get() = _lastCharacterList
+
+    fun initialLoad() {
+        if(_characterList.value == null)
+            loadMoreCharacters(0)
+    }
 
     fun loadMoreCharacters(offset: Int) {
         CoroutineScope(Dispatchers.Main).launch {
@@ -42,5 +50,13 @@ class MainViewModel(
         }
     }
 
-    fun getEmptyList() = mutableListOf<Characters?>()
+    fun onSelectedCharacter(position: Int) {
+        _characterList.value?.also {
+            _characterDetail.value = it[position]
+        }
+    }
+
+    fun getCharacterList(): MutableList<Characters?> {
+        return _characterList.value ?: mutableListOf<Characters?>()
+    }
 }

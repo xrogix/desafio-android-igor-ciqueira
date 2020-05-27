@@ -8,7 +8,11 @@ import com.example.data.services.ImageProvider
 import com.example.desafioandroidigorciqueira.R
 import com.example.domain.model.Characters
 
-internal class CharacterViewHolder(private val imageProvider: ImageProvider, itemView: View): RecyclerView.ViewHolder(itemView) {
+internal class CharacterViewHolder(
+    private val imageProvider: ImageProvider,
+    itemView: View
+): RecyclerView.ViewHolder(itemView) {
+
     private val ivCharacterImage = itemView.findViewById<AppCompatImageView>(R.id.iv_character_image)
     private val tvCharacterName = itemView.findViewById<AppCompatTextView>(R.id.tv_character_name)
 
