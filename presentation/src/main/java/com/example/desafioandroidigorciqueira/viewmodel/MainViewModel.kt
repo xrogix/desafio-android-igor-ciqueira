@@ -4,14 +4,17 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.domain.model.Characters
+import com.example.domain.model.Comics
 import com.example.domain.repository.CharactersRepository
+import com.example.domain.repository.ComicsRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class MainViewModel(
-    private val charactersRepository: CharactersRepository
+    private val charactersRepository: CharactersRepository,
+    private val comicsRepository: ComicsRepository
 ): ViewModel() {
 
     //all character list
@@ -24,15 +27,14 @@ class MainViewModel(
     val charactersDetail : LiveData<Characters>
         get() = _characterDetail
 
+    private val _comicsList = MutableLiveData<MutableList<Comics>>()
+    val comicsList : LiveData<MutableList<Comics>>
+        get() = _comicsList
+
     //control 20 last requisition characters
     private val _lastCharacterList = MutableLiveData<MutableList<Characters>>()
     val lastCharacterList: LiveData<MutableList<Characters>>
         get() = _lastCharacterList
-
-    fun initialLoad() {
-        if(_characterList.value == null)
-            loadMoreCharacters(0)
-    }
 
     fun loadMoreCharacters(offset: Int) {
         CoroutineScope(Dispatchers.Main).launch {
@@ -47,6 +49,26 @@ class MainViewModel(
 
             //add last request for control recyclerview pagination
             _lastCharacterList.value = newRequisittion
+        }
+    }
+
+    fun findExpensiveComic() {
+        CoroutineScope(Dispatchers.Main).launch {
+            _comicsList.value = withContext(Dispatchers.Default) {
+                _characterDetail.value?.let {
+                    comicsRepository.getComicsByCharacter(it.id.toString()).data.results
+                }
+            }
+        }
+    }
+
+    fun getExpensiveComics() {
+        _comicsList.value?.also {
+            it.maxBy {commics ->
+                commics.prices.filter {price ->
+                    price.type == "printPrice"
+                }[0].price
+            }
         }
     }
 

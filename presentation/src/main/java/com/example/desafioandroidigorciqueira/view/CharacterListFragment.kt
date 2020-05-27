@@ -25,7 +25,7 @@ class CharacterListFragment : Fragment() {
     private val imageProvider: ImageProvider by inject()
 
     private var isLoading = false
-    private var offset = 20
+    private var offset = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,7 +39,7 @@ class CharacterListFragment : Fragment() {
         recyclerView = view.findViewById(R.id.rv_list_characters)
 
         listenViewModel()
-        mainViewModel.initialLoad()
+        populateData()
         initAdapter()
     }
 

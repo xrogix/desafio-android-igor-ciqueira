@@ -5,7 +5,7 @@ data class Comics(
     val title: String,
     val variantDescription: String,
     val description: String,
-    val prices: String,
+    val prices: ArrayList<Prices>,
     val thumbnail: Thumbnail,
     val images: List<Thumbnail>
 )

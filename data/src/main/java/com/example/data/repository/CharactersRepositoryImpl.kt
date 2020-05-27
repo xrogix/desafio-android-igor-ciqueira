@@ -3,6 +3,7 @@ package com.example.data.repository
 import com.example.data.environment.Environment
 import com.example.data.extension.toMD5
 import com.example.data.services.ServiceProvider
+import com.example.domain.model.Characters
 import com.example.domain.model.Wrapper
 import com.example.domain.repository.CharactersRepository
 
@@ -11,7 +12,7 @@ class CharactersRepositoryImpl(
     private val environment: Environment
 ) : CharactersRepository {
 
-    override suspend fun listCharacters(offset: Int): Wrapper {
+    override suspend fun listCharacters(offset: Int): Wrapper<Characters> {
         val ts = System.currentTimeMillis().toString()
         val hash = ts + environment.privateKey + environment.publicKey
 

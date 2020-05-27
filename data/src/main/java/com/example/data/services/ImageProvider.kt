@@ -7,10 +7,10 @@ import com.bumptech.glide.Glide
 class ImageProvider(
     private val context: Context
 ) {
-    fun renderImage(url: String, target: ImageView) {
+    fun renderImage(url: String, target: ImageView, type: Int = 0) {
         //TODO ajustar variável de imagens
         Glide.with(context)
-            .load("$url/standard_medium.jpg")
+            .load(if( type == 0) "$url/standard_medium.jpg" else "$url/portrait_medium.jpg")
             .into(target)
     }
 }

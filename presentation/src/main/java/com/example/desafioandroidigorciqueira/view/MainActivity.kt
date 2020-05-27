@@ -28,7 +28,14 @@ class MainActivity : AppCompatActivity() {
             val ft = supportFragmentManager.beginTransaction()
             ft.addToBackStack(null)
             val newFragment = CharacterDetailFragment.newInstance()
-            newFragment.show(ft, "dialog")
+            newFragment.show(ft, "character_dialog")
+        })
+
+        mainViewModel.comicsList.observe(this, Observer {
+            val ft = supportFragmentManager.beginTransaction()
+            ft.addToBackStack(null)
+            val newFragment = ComicsFragment.newInstance()
+            newFragment.show(ft, "comics_dialog")
         })
     }
 

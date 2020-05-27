@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
@@ -34,6 +35,10 @@ class CharacterDetailFragment : DialogFragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         listeners()
+
+        view?.findViewById<AppCompatButton>(R.id.btn_most_expensive_comic)?.setOnClickListener {
+            mainViewModel.findExpensiveComic()
+        }
     }
 
     override fun onResume() {
