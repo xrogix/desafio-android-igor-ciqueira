@@ -1,0 +1,253 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [:data] /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/57187493581a75535d52a31566a363be/koin-androidx-viewmodel-2.1.5/AndroidManifest.xml:2:1-9:12
+MERGED from [org.koin:koin-androidx-scope:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7e82f866bb85ca1846ea58f933bce2a5/koin-androidx-scope-2.1.5/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/1e26be71f35f7d459c113e2da2642d4b/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/335f909f9997a09c49c6830637404c26/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0da5f8b602e7e2ab3cdf57b034ca704/core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c00897a75935c57de9f8625a7c89903f/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f827678e7fe0f777db9fa5b555be2b83/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3fb0a6036a4b631207c70b49ee81dadd/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ecb7f8b9ea35181c6657ae535b5b61e5/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bb2166ce9e58b9a22b4552f8df48ccf2/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/644a4b839895c585deb9002e64c407e3/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [org.koin:koin-android:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/09fc9f9b06304438d7aa0f8972c15978/koin-android-2.1.5/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/11ed8c4f87157559e394a5506402c6d4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/45d89cc3bcae426d3980202b7e26d0f4/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/300585be0084c74373eb79498ea51109/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/aa4f73387743fa94a037a05f875c733d/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bcd51a273d6777775aff2546fd7d8d16/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d28c37c6e0faa70f63ae9d0262b809c8/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c124293033f71c007933883f99c7a4fd/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/5b8afadcbee1592dab86686d14820bf2/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f52b6cc49d5ea37174495d1eb4aa536f/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d253558e976ef01747d5e872e30cc3c0/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a65e806424beac3314f03beb85ee505a/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/08f127987cb879a8338adc225eef7d1a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2b0ef375a9d627805af2f6f3defcfca7/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ff6c73e3536040695f7fac333e23b5f8/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c620854c752e1e9ceeb1a3171fc682ad/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/55262931806924182b32bd4bdf785d88/activity-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2958f29d608010c149ae89b43d579e98/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/554ccf4cee33fc561b5ef94dc761ef55/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/884a228e46f1b6032ef86e33f9c4b410/lifecycle-service-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7b6275ba5835ba8d629f84035808b531/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0164d9a7d530ac112114ee93feb80cf/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3e37651fa4cbb5100ed74f42560667cc/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/887ff615c585c071ff6bd6428f82e4d4/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/22d7c55f529bebecabf5d6f57285d033/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/539815fad61fca73fb17ed4a06345d83/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/92137ebea7a682442e8199e0a856ff5e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/473181a3f6b3b9e46557e6391404279b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/6cddddf5f25241c6e306577d44036f13/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/dce45f4c70c48262926d70f327f88c10/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f4716a8b48e5000307e9e0a7df9cc4c8/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c529da45d398e1cf39b2a60bd8b9dbd3/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/01a2c0e27bb330491db0162bae0be257/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/146fa338375b1b8ca44f3c242a47d38f/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:3:5-53
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:1-26:12
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:5:5-67
+MERGED from [:data] /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+MERGED from [:data] /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/57187493581a75535d52a31566a363be/koin-androidx-viewmodel-2.1.5/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/57187493581a75535d52a31566a363be/koin-androidx-viewmodel-2.1.5/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-scope:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7e82f866bb85ca1846ea58f933bce2a5/koin-androidx-scope-2.1.5/AndroidManifest.xml:7:5-20
+MERGED from [org.koin:koin-androidx-scope:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7e82f866bb85ca1846ea58f933bce2a5/koin-androidx-scope-2.1.5/AndroidManifest.xml:7:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c00897a75935c57de9f8625a7c89903f/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c00897a75935c57de9f8625a7c89903f/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f827678e7fe0f777db9fa5b555be2b83/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f827678e7fe0f777db9fa5b555be2b83/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bcd51a273d6777775aff2546fd7d8d16/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bcd51a273d6777775aff2546fd7d8d16/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/473181a3f6b3b9e46557e6391404279b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/473181a3f6b3b9e46557e6391404279b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/01a2c0e27bb330491db0162bae0be257/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/01a2c0e27bb330491db0162bae0be257/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:11:9-41
+	android:roundIcon
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:14:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:15:9-44
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:8:9-28
+activity#com.example.desafioandroidigorciqueira.view.MainActivity2
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:16:9-65
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:16:19-53
+activity#com.example.desafioandroidigorciqueira.view.MainActivity
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:17:19-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml:21:27-74
+uses-sdk
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+MERGED from [:data] /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:data] /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/data/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/57187493581a75535d52a31566a363be/koin-androidx-viewmodel-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-viewmodel:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/57187493581a75535d52a31566a363be/koin-androidx-viewmodel-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-scope:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7e82f866bb85ca1846ea58f933bce2a5/koin-androidx-scope-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-androidx-scope:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7e82f866bb85ca1846ea58f933bce2a5/koin-androidx-scope-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/1e26be71f35f7d459c113e2da2642d4b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/1e26be71f35f7d459c113e2da2642d4b/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/335f909f9997a09c49c6830637404c26/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/335f909f9997a09c49c6830637404c26/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0da5f8b602e7e2ab3cdf57b034ca704/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0da5f8b602e7e2ab3cdf57b034ca704/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c00897a75935c57de9f8625a7c89903f/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c00897a75935c57de9f8625a7c89903f/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f827678e7fe0f777db9fa5b555be2b83/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f827678e7fe0f777db9fa5b555be2b83/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3fb0a6036a4b631207c70b49ee81dadd/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3fb0a6036a4b631207c70b49ee81dadd/lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ecb7f8b9ea35181c6657ae535b5b61e5/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ecb7f8b9ea35181c6657ae535b5b61e5/lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bb2166ce9e58b9a22b4552f8df48ccf2/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bb2166ce9e58b9a22b4552f8df48ccf2/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/644a4b839895c585deb9002e64c407e3/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/644a4b839895c585deb9002e64c407e3/lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [org.koin:koin-android:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/09fc9f9b06304438d7aa0f8972c15978/koin-android-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [org.koin:koin-android:2.1.5] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/09fc9f9b06304438d7aa0f8972c15978/koin-android-2.1.5/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/11ed8c4f87157559e394a5506402c6d4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/11ed8c4f87157559e394a5506402c6d4/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/45d89cc3bcae426d3980202b7e26d0f4/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/45d89cc3bcae426d3980202b7e26d0f4/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/300585be0084c74373eb79498ea51109/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/300585be0084c74373eb79498ea51109/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/aa4f73387743fa94a037a05f875c733d/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/aa4f73387743fa94a037a05f875c733d/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bcd51a273d6777775aff2546fd7d8d16/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/bcd51a273d6777775aff2546fd7d8d16/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d28c37c6e0faa70f63ae9d0262b809c8/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d28c37c6e0faa70f63ae9d0262b809c8/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c124293033f71c007933883f99c7a4fd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c124293033f71c007933883f99c7a4fd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/5b8afadcbee1592dab86686d14820bf2/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/5b8afadcbee1592dab86686d14820bf2/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f52b6cc49d5ea37174495d1eb4aa536f/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f52b6cc49d5ea37174495d1eb4aa536f/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d253558e976ef01747d5e872e30cc3c0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/d253558e976ef01747d5e872e30cc3c0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a65e806424beac3314f03beb85ee505a/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a65e806424beac3314f03beb85ee505a/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/08f127987cb879a8338adc225eef7d1a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/08f127987cb879a8338adc225eef7d1a/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2b0ef375a9d627805af2f6f3defcfca7/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2b0ef375a9d627805af2f6f3defcfca7/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ff6c73e3536040695f7fac333e23b5f8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/ff6c73e3536040695f7fac333e23b5f8/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c620854c752e1e9ceeb1a3171fc682ad/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c620854c752e1e9ceeb1a3171fc682ad/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/55262931806924182b32bd4bdf785d88/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/55262931806924182b32bd4bdf785d88/activity-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2958f29d608010c149ae89b43d579e98/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/2958f29d608010c149ae89b43d579e98/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/554ccf4cee33fc561b5ef94dc761ef55/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/554ccf4cee33fc561b5ef94dc761ef55/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a8a37e47aec2a1af911f81ae5db379d7/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/884a228e46f1b6032ef86e33f9c4b410/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/884a228e46f1b6032ef86e33f9c4b410/lifecycle-service-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7b6275ba5835ba8d629f84035808b531/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/7b6275ba5835ba8d629f84035808b531/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0164d9a7d530ac112114ee93feb80cf/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/a0164d9a7d530ac112114ee93feb80cf/lifecycle-livedata-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3e37651fa4cbb5100ed74f42560667cc/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/3e37651fa4cbb5100ed74f42560667cc/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/887ff615c585c071ff6bd6428f82e4d4/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/887ff615c585c071ff6bd6428f82e4d4/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/22d7c55f529bebecabf5d6f57285d033/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/22d7c55f529bebecabf5d6f57285d033/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/539815fad61fca73fb17ed4a06345d83/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/539815fad61fca73fb17ed4a06345d83/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/92137ebea7a682442e8199e0a856ff5e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/92137ebea7a682442e8199e0a856ff5e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/473181a3f6b3b9e46557e6391404279b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/473181a3f6b3b9e46557e6391404279b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/6cddddf5f25241c6e306577d44036f13/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/6cddddf5f25241c6e306577d44036f13/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/dce45f4c70c48262926d70f327f88c10/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/dce45f4c70c48262926d70f327f88c10/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f4716a8b48e5000307e9e0a7df9cc4c8/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/f4716a8b48e5000307e9e0a7df9cc4c8/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c529da45d398e1cf39b2a60bd8b9dbd3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/c529da45d398e1cf39b2a60bd8b9dbd3/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/01a2c0e27bb330491db0162bae0be257/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/01a2c0e27bb330491db0162bae0be257/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/146fa338375b1b8ca44f3c242a47d38f/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/146fa338375b1b8ca44f3c242a47d38f/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		ADDED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+		INJECTED from /Users/iciqueir/AndroidStudioProjects/DesafioAndroidIgorCiqueira/presentation/src/main/AndroidManifest.xml
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/iciqueir/.gradle/caches/transforms-2/files-2.1/896bde7c675ba229e9bc9ee31032b76b/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
