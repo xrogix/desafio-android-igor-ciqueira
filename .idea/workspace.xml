@@ -383,6 +383,11 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="NetworkTest - 2020.05.27 at 06h 21m 09s.xml">
+      <configuration name="NetworkTest" configurationId="AndroidJUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
