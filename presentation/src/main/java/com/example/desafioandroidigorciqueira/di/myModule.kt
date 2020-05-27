@@ -15,7 +15,6 @@ import org.koin.dsl.module
 
 val myModule = module {
 
-    //TODO ajustar variaveis de ambiente
     single { Environment("https://gateway.marvel.com/", "d4d20d6d2c25b8600d060ae71cd4eeb6", "b7ccdff3893996f147026f7ee11ae762a59342a1") }
 
     single { ImageProvider(get()) }

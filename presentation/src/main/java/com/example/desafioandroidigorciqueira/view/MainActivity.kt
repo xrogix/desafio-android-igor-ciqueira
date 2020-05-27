@@ -2,6 +2,7 @@ package com.example.desafioandroidigorciqueira.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.example.desafioandroidigorciqueira.R
 import com.example.desafioandroidigorciqueira.viewmodel.MainViewModel
@@ -36,6 +37,10 @@ class MainActivity : AppCompatActivity() {
             ft.addToBackStack(null)
             val newFragment = ComicsFragment.newInstance()
             newFragment.show(ft, "comics_dialog")
+        })
+
+        mainViewModel.networkError.observe(this, Observer {
+            Toast.makeText(this, "Erro de conexão", Toast.LENGTH_LONG).show()
         })
     }
 

@@ -7,6 +7,7 @@ import com.example.domain.model.Characters
 import com.example.domain.model.Comics
 import com.example.domain.repository.CharactersRepository
 import com.example.domain.repository.ComicsRepository
+import com.example.domain.repository.ResultWrapper
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -31,6 +32,10 @@ class MainViewModel(
     val comicsList : LiveData<MutableList<Comics>>
         get() = _comicsList
 
+    private val _networkError = MutableLiveData<Boolean>()
+    val networkError : LiveData<Boolean>
+        get() = _networkError
+
     //control 20 last requisition characters
     private val _lastCharacterList = MutableLiveData<MutableList<Characters>>()
     val lastCharacterList: LiveData<MutableList<Characters>>
@@ -39,17 +44,24 @@ class MainViewModel(
     fun loadMoreCharacters(offset: Int) {
         CoroutineScope(Dispatchers.Main).launch {
             //begin new requisition
-            val newRequisittion = withContext(Dispatchers.Default) {
-                charactersRepository.listCharacters(offset).data.results
+            when(val characterList = charactersRepository.listCharacters(offset)) {
+                is ResultWrapper.NetworkError -> showNetworkError()
+                is ResultWrapper.Success ->  {
+                    val newRequisition = characterList.value.data.results
+
+                    //add result do character list
+                    list.addAll(newRequisition)
+                    _characterList.value = list
+
+                    //add last request for control recyclerview pagination
+                    _lastCharacterList.value = newRequisition
+                }
             }
-
-            //add result do character list
-            list.addAll(newRequisittion)
-            _characterList.value = list
-
-            //add last request for control recyclerview pagination
-            _lastCharacterList.value = newRequisittion
         }
+    }
+
+    private fun showNetworkError() {
+        _networkError.value = true
     }
 
     fun findExpensiveComic() {
@@ -58,16 +70,6 @@ class MainViewModel(
                 _characterDetail.value?.let {
                     comicsRepository.getComicsByCharacter(it.id.toString()).data.results
                 }
-            }
-        }
-    }
-
-    fun getExpensiveComics() {
-        _comicsList.value?.also {
-            it.maxBy {commics ->
-                commics.prices.filter {price ->
-                    price.type == "printPrice"
-                }[0].price
             }
         }
     }
