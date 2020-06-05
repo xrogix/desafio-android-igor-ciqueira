@@ -1,17 +1,17 @@
 package com.example.data.factory
 
-import com.example.data.environment.Environment
+import com.example.data.environment.EnvironmentProvider
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class ServiceFactory(
-    private val environment: Environment
+    private val environment: EnvironmentProvider
 ) {
 
     fun <T> create(serviceType: Class<T>): T {
         return create(
             serviceType,
-            environment.baseUrl
+            environment.getUrlService()
         )
     }
 

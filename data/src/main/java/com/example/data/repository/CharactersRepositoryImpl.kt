@@ -1,6 +1,6 @@
 package com.example.data.repository
 
-import com.example.data.environment.Environment
+import com.example.data.environment.EnvironmentProvider
 import com.example.data.extension.toMD5
 import com.example.data.services.ServiceProvider
 import com.example.domain.model.Characters
@@ -12,18 +12,18 @@ import kotlinx.coroutines.Dispatchers
 
 class CharactersRepositoryImpl(
     private val serviceProvider: ServiceProvider,
-    private val environment: Environment,
+    private val environment: EnvironmentProvider,
     private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : CharactersRepository {
 
     override suspend fun listCharacters(offset: Int): ResultWrapper<Wrapper<Characters>> {
         val ts = System.currentTimeMillis().toString()
-        val hash = ts + environment.privateKey + environment.publicKey
+        val hash = ts + environment.getPrivateKey() + environment.getPublicKey()
 
         return safeApiCall(dispatcher) {
             serviceProvider.getService().listCharacters(
                 ts,
-                environment.publicKey,
+                environment.getPublicKey(),
                 hash.toMD5(),
                 "20",
                 offset.toString()

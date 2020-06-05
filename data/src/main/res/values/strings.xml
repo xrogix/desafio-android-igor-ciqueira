@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">data</string>
+    <!-- services config -->
+    <string name="url_service">https://gateway.marvel.com/</string>
+    <string name="public_key">d4d20d6d2c25b8600d060ae71cd4eeb6</string>
+    <string name="private_key">b7ccdff3893996f147026f7ee11ae762a59342a1</string>
 </resources>

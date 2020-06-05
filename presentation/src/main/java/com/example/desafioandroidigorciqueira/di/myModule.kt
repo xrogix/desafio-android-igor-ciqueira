@@ -1,6 +1,7 @@
 package com.example.desafioandroidigorciqueira.di
 
-import com.example.data.environment.Environment
+import com.example.data.environment.EnvironmentProvider
+import com.example.data.environment.EnvironmentProviderImpl
 import com.example.data.factory.ServiceFactory
 import com.example.data.repository.CharactersRepositoryImpl
 import com.example.data.repository.ComicsRepositoryImpl
@@ -15,7 +16,7 @@ import org.koin.dsl.module
 
 val myModule = module {
 
-    single { Environment("https://gateway.marvel.com/", "d4d20d6d2c25b8600d060ae71cd4eeb6", "b7ccdff3893996f147026f7ee11ae762a59342a1") }
+    single<EnvironmentProvider> { EnvironmentProviderImpl(get()) }
 
     single { ImageProvider(get()) }
 
